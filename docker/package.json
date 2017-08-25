@@ -4,7 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test:unit": "mocha  tests/unit/*.js"
+    "test:unit": "mocha  tests/unit/*.js",
+    "analyze-coverage": "istanbul cover node_modules/mocha/bin/_mocha   -include-all-sources true -- --recursive -R spec tests/unit/*.js",
+    "check-coverage": "istanbul check-coverage --statement 87 --branch 79 --function 75"
   },
   "author": "",
   "license": "ISC",
