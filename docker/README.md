@@ -1,9 +1,12 @@
 
 
-Requirements to run code coverage:
+## Requirements to run code coverage:
+```bash
 install istanbul globally
 $ npm install -g instanbul
-
-To Run unit tests and evaluate the code coverage.
+```
+## Analyze code-coverage of unit tests
+```bash
 cd docker
 npm run-script analyze-coverage
+```
